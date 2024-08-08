@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Aprofunde seu conhecimento</title>
+</head>
+<body>
+    <audio id="audio" src="sounds/videoplayback.mp3"></audio>
+
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cone-criativo-de-uma-meia-lampada-meio-cerebro-representando-ideias-criatividade-conhecimento-tecnologia-e-a-mente-humana-resolucao-de-problemas-de-conceito-de-ilustracao-de-linha-fina_175838-3463.avif">
+            <p>Em qual área você mais se identifica?</p>
+            <button class="btn-proximo" data-proximo="1">Humanas</button>
+            <button class="btn-proximo" data-proximo="2">Exatas</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Escolha uma matéria</p>
+            <button class="btn-proximo" data-proximo="3">História</button>
+            <button class="btn-proximo" data-proximo="4">Geografia</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Escolha uma matéria</p>
+            <button class="btn-proximo" data-proximo="5">Matemática</button>
+            <button class="btn-proximo" data-proximo="6">Física</button>
+        </div>
+    </main>
+
+    <div class="passo" id="passo-3">
+        <img src="img/15355770535b870bdd3cd33_1535577053_3x2_md.jpg" onload="playSound()"> 
+    </div>
+    <div class="passo" id="passo-4">
+        <img src="img/15355770535b870bdd3cd33_1535577053_3x2_md.jpg" onload="playSound()"> 
+    </div>
+    <div class="passo" id="passo-5">
+        <img src="img/15355770535b870bdd3cd33_1535577053_3x2_md.jpg" onload="playSound()"> 
+    </div>
+    <div class="passo" id="passo-6">
+        <img src="img/15355770535b870bdd3cd33_1535577053_3x2_md.jpg" onload="playSound()"> 
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function playSound() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
